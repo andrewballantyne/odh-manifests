@@ -78,7 +78,7 @@ Begin ODH Web Test
 
     # Workaround for issues when the dashboard reports "No Components Found" on the initial load
     Wait Until Element Is Not Visible  xpath://h5[.="No Components Found"]   120seconds
-    Wait Until Element Is Visible   xpath://div[@class="pf-c-card__title" and .="Jupyter"]/../div[contains(@class,"pf-c-card__footer")]/a   120seconds
+    Wait Until Element Is Visible   xpath://div[contains(@class,"pf-c-card") and @data-id="jupyter"]/div[contains(@class,"pf-c-card__footer")]/a   120seconds
 
     Launch Jupyter From RHODS Dashboard Link
     Login To Jupyterhub  ${TEST_USER.USERNAME}  ${TEST_USER.PASSWORD}  ${TEST_USER.AUTH_TYPE}
