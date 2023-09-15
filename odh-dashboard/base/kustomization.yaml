@@ -21,10 +21,11 @@ resources:
   - image-puller.clusterrolebinding.yaml
   - model-serving-role.yaml
   - model-serving-role-binding.yaml
+  - fetch-accelerators.rbac.yaml
 images:
 - name: odh-dashboard
   newName: quay.io/opendatahub/odh-dashboard
-  digest: sha256:4478d3830a30058fb87ed3e94dfdc615bf7517fddbd8490d6e2563263a0752fb
+  digest: sha256:30a708cf6b7cf1a215fd9989293e9aa075105c182cdea05b5c35dd5cb177b403
 - name: oauth-proxy
   newName: registry.redhat.io/openshift4/ose-oauth-proxy
   digest: sha256:ab112105ac37352a2a4916a39d6736f5db6ab4c29bad4467de8d613e80e9bb33
